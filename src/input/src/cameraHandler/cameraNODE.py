@@ -39,7 +39,7 @@ from sensor_msgs.msg import Image
 
 class cameraNODE():
     def __init__(self):
-        """The purpose of this nodeis to get the images from the camera with the configured parameters
+        """The purpose of this node is to get the images from the camera with the configured parameters
         and post the image on a ROS topic. 
         It is able also to record videos and save them locally. You can do so by setting the self.RecordMode = True.
         """
