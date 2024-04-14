@@ -1,0 +1,9 @@
+<launch>
+    
+    <!-- User defined NODES -->
+    <node pkg="input"  type="myCameraNODE.py" 			name="myCameraNODE"  			output="screen"/>
+
+    <node pkg="output" type="serialCheckNODE.py"        name="serialCheckNODE"          output="screen"/>
+    <node pkg="output" type="serialReadNODE.py"         name="serialReadNODE"           output="screen"/>
+    <node pkg="output" type="serialWriteNODE.py"        name="serialWriteNODE"          output="screen"/>
+</launch>

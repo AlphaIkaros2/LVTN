@@ -22,6 +22,10 @@ class checkNODE:
             self.pub.publish(command)
             time.sleep(0.01)
 
+        command = {"action": "2", "steerAngle": 0.0}
+        command = json.dumps(command)
+        self.pub.publish(command)
+
 if __name__ =='__main__':
     checkNod = checkNODE()
     checkNod._run()

@@ -1,6 +1,7 @@
 import numpy as np
 from picamera2 import PiCamera2
 import time
+import cv2
 
 import rospy
 
@@ -33,7 +34,9 @@ class myCameraNODE:
                 self.image_publisher.publish(imageObject)
             except CvBridgeError as e:
                     print(e)
-
+            cv2.imshow('frame', request)
+            cv2.waitKey(1)
+            
 if __name__ == '__main__':
     camNod = myCameraNODE()
     camNod._run()
