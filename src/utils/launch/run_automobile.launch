@@ -8,7 +8,7 @@
     <!-- <node pkg="output" type="environmentalNODE.py" 	name="environmentalNODE"  		output="screen"/>  -->
     
     <!-- User defined NODES -->
-    <node pkg="input" type="cameraNODE.py" 				name="camaeraNODE"  			output="screen"/>
+    <node pkg="input" type="myCameraNODE.py" 			name="myCameraNODE"  			output="screen"/>
 
     <node pkg="output" type="serialReadNODE.py"         name="serialReadNODE"           output="screen"/>
     <node pkg="output" type="serialWriteNODE.py"        name="serialWriteNODE"          output="screen"/>
